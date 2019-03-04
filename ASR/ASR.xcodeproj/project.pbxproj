@@ -19,7 +19,8 @@
 		1A3B60F52174771200CE74BA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3B60F42174771200CE74BA /* Security.framework */; };
 		1A3B60F72174771800CE74BA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3B60F62174771800CE74BA /* CFNetwork.framework */; };
 		1A3B60F92174772600CE74BA /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3B60F82174772600CE74BA /* libicucore.tbd */; };
-		1AE385C4217829AC0032CD84 /* libEduASR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE385C3217829AC0032CD84 /* libEduASR.a */; };
+		1AA74242222D4EAF00B471BC /* libEduASR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA74241222D4EAF00B471BC /* libEduASR.a */; };
+		1AA7424B222D4F3A00B471BC /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA7424A222D4F3A00B471BC /* libc++.1.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,13 +60,14 @@
 		1A3B60F42174771200CE74BA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1A3B60F62174771800CE74BA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		1A3B60F82174772600CE74BA /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		1AE385BD217829A50032CD84 /* EduSpeechRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EduSpeechRecognizer.h; sourceTree = "<group>"; };
-		1AE385BE217829A50032CD84 /* EduTranscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EduTranscription.h; sourceTree = "<group>"; };
-		1AE385BF217829A50032CD84 /* EduSpeechRecognitionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EduSpeechRecognitionRequest.h; sourceTree = "<group>"; };
-		1AE385C0217829A50032CD84 /* EduASR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EduASR.h; sourceTree = "<group>"; };
-		1AE385C1217829A50032CD84 /* EduSpeechRecognitionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EduSpeechRecognitionTask.h; sourceTree = "<group>"; };
-		1AE385C2217829A50032CD84 /* EduSpeechRecognitionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EduSpeechRecognitionResult.h; sourceTree = "<group>"; };
-		1AE385C3217829AC0032CD84 /* libEduASR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEduASR.a; sourceTree = "<group>"; };
+		1AA74241222D4EAF00B471BC /* libEduASR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEduASR.a; sourceTree = "<group>"; };
+		1AA74244222D4EB700B471BC /* EduSpeechRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EduSpeechRecognizer.h; sourceTree = "<group>"; };
+		1AA74245222D4EB700B471BC /* EduTranscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EduTranscription.h; sourceTree = "<group>"; };
+		1AA74246222D4EB700B471BC /* EduSpeechRecognitionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EduSpeechRecognitionRequest.h; sourceTree = "<group>"; };
+		1AA74247222D4EB700B471BC /* EduASR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EduASR.h; sourceTree = "<group>"; };
+		1AA74248222D4EB700B471BC /* EduSpeechRecognitionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EduSpeechRecognitionTask.h; sourceTree = "<group>"; };
+		1AA74249222D4EB700B471BC /* EduSpeechRecognitionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EduSpeechRecognitionResult.h; sourceTree = "<group>"; };
+		1AA7424A222D4F3A00B471BC /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA7424B222D4F3A00B471BC /* libc++.1.tbd in Frameworks */,
 				1A3B60F92174772600CE74BA /* libicucore.tbd in Frameworks */,
-				1AE385C4217829AC0032CD84 /* libEduASR.a in Frameworks */,
+				1AA74242222D4EAF00B471BC /* libEduASR.a in Frameworks */,
 				1A3B60F72174771800CE74BA /* CFNetwork.framework in Frameworks */,
 				1A3B60F52174771200CE74BA /* Security.framework in Frameworks */,
 			);
@@ -156,8 +159,8 @@
 		1A3B60E02174751E00CE74BA /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				1AE385C3217829AC0032CD84 /* libEduASR.a */,
-				1AE385BB217829A50032CD84 /* include */,
+				1AA74243222D4EB700B471BC /* include */,
+				1AA74241222D4EAF00B471BC /* libEduASR.a */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 		1A3B60F32174771200CE74BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1AA7424A222D4F3A00B471BC /* libc++.1.tbd */,
 				1A3B60F82174772600CE74BA /* libicucore.tbd */,
 				1A3B60F62174771800CE74BA /* CFNetwork.framework */,
 				1A3B60F42174771200CE74BA /* Security.framework */,
@@ -172,25 +176,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1AE385BB217829A50032CD84 /* include */ = {
+		1AA74243222D4EB700B471BC /* include */ = {
 			isa = PBXGroup;
 			children = (
-				1AE385BC217829A50032CD84 /* EduASR */,
+				1AA74247222D4EB700B471BC /* EduASR.h */,
+				1AA74246222D4EB700B471BC /* EduSpeechRecognitionRequest.h */,
+				1AA74249222D4EB700B471BC /* EduSpeechRecognitionResult.h */,
+				1AA74248222D4EB700B471BC /* EduSpeechRecognitionTask.h */,
+				1AA74244222D4EB700B471BC /* EduSpeechRecognizer.h */,
+				1AA74245222D4EB700B471BC /* EduTranscription.h */,
 			);
 			path = include;
-			sourceTree = "<group>";
-		};
-		1AE385BC217829A50032CD84 /* EduASR */ = {
-			isa = PBXGroup;
-			children = (
-				1AE385BD217829A50032CD84 /* EduSpeechRecognizer.h */,
-				1AE385BE217829A50032CD84 /* EduTranscription.h */,
-				1AE385BF217829A50032CD84 /* EduSpeechRecognitionRequest.h */,
-				1AE385C0217829A50032CD84 /* EduASR.h */,
-				1AE385C1217829A50032CD84 /* EduSpeechRecognitionTask.h */,
-				1AE385C2217829A50032CD84 /* EduSpeechRecognitionResult.h */,
-			);
-			path = EduASR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

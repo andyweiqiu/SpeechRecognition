@@ -33,7 +33,7 @@ class URLSpeechRecognition: NSObject {
 extension URLSpeechRecognition: EduSpeechRecognitionTaskDelegate {
 
     func speechRecognitionTask(_ task: EduSpeechRecognitionTask, didFinishRecognition recognitionResult: EduSpeechRecognitionResult) {
-        resultHandler(recognitionResult.bestTranscription)
+        resultHandler(recognitionResult.bestTranscription!)
     }
 
     func speechRecognitionTask(_ task: EduSpeechRecognitionTask, didHypothesizeTranscription transcription: EduTranscription) {

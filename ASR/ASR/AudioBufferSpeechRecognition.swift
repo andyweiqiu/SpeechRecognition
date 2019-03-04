@@ -134,12 +134,12 @@ extension AudioBufferSpeechRecognition: EduSpeechRecognitionTaskDelegate {
         endCapture()
         audioEngine.stop()
 
-        print("识别结果：", recognitionResult.bestTranscription.formattedString)
+        print("识别结果：", recognitionResult.bestTranscription?.formattedString)
         print("transcriptions: ", recognitionResult.transcriptions)
 //        for transcription in recognitionResult.transcriptions {
 //            print("text: ", transcription.formattedString)
 //        }
-        resultHandler(recognitionResult.bestTranscription, true)
+        resultHandler(recognitionResult.bestTranscription!, true)
     }
 
     func speechRecognitionTask(_ task: EduSpeechRecognitionTask, didHypothesizeTranscription transcription: EduTranscription) {
